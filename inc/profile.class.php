@@ -2,7 +2,7 @@
 
 class PluginContratosProfile extends CommonDBTM
 {
-    public static $rightname = 'plugin_contratos';
+    public static string $rightname = 'plugin_contratos';
 
     public static function install(): bool
     {

@@ -4,7 +4,7 @@ namespace GlpiPlugin\Contratos;
 
 class Contract extends \CommonDBTM
 {
-    public static $rightname = 'plugin_contratos';
+    public static string $rightname = 'plugin_contratos';
 
     public static function getTypeName($nb = 0): string
     {
