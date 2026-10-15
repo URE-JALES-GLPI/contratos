@@ -2,7 +2,7 @@
 
 define('PLUGIN_CONTRATOS_VERSION', '1.0.0');
 define('PLUGIN_CONTRATOS_MIN_GLPI', '10.0.0');
-define('PLUGIN_CONTRATOS_MAX_GLPI', '12.0.0');
+define('PLUGIN_CONTRATOS_MAX_GLPI', '13.0.0');
 
 function plugin_version_contratos(): array
 {
