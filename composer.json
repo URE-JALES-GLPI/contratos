@@ -1,0 +1,11 @@
+{
+    "name": "glpi-plugin/contratos",
+    "description": "Gestao de contratos e vencimentos (internet, garantias, licencas) com alertas 30/60/90",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "GlpiPlugin\\Contratos\\": "src/"
+        }
+    }
+}

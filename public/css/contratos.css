@@ -1,0 +1,14 @@
+.contratos-cards { display: flex; gap: 12px; margin: 12px 0; flex-wrap: wrap; }
+.contratos-cards .card { padding: 12px 18px; border-radius: 8px; min-width: 110px; text-align: center; color: #222; background: #eee; }
+.contratos-cards .card .n { display: block; font-size: 24px; font-weight: bold; }
+.contratos-cards .verde { background: #c8e6c9; }
+.contratos-cards .amarelo { background: #fff9c4; }
+.contratos-cards .laranja { background: #ffe0b2; }
+.contratos-cards .vermelho { background: #ffcdd2; }
+.contratos-cards .vencido { background: #e0e0e0; }
+.contratos-filtros { margin: 12px 0; }
+.contratos-table tr.verde { background: #e8f5e9; }
+.contratos-table tr.amarelo { background: #fffde7; }
+.contratos-table tr.laranja { background: #fff3e0; }
+.contratos-table tr.vermelho { background: #ffebee; }
+.contratos-table tr.vencido { background: #f5f5f5; color: #666; }
