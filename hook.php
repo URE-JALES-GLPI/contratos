@@ -119,6 +119,9 @@ function plugin_contratos_install(): bool
 function plugin_contratos_update(string $old_version): bool
 {
     plugin_contratos_schema();
+    // Garante linhas de direito para perfis criados após a instalação
+    // (sem conceder nada de novo: grant_superadmin=false).
+    PluginContratosProfile::install(false);
     return true;
 }
 
