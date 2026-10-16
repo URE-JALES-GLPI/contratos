@@ -23,7 +23,7 @@ if (($_GET['export'] ?? '') === 'csv') {
     exit;
 }
 
-Html::header(__('Dashboard Contratos', 'contratos'), '', 'tools', 'plugincontratosmenu');
+Html::header(__('Dashboard Contratos', 'contratos'), '', 'plugins', 'plugincontratosmenu', 'dashboard');
 
 $rows = Contract::listForDashboard($tipo, $ent, $status);
 $counts = ['verde' => 0, 'amarelo' => 0, 'laranja' => 0, 'vermelho' => 0, 'vencido' => 0];

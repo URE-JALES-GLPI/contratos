@@ -38,11 +38,11 @@ if (isset($_POST['add'])) {
     }
     Html::redirect('/plugins/contratos/front/contract.form.php?id=' . $id);
 } elseif (isset($_GET['id'])) {
-    Html::header(__('Contrato', 'contratos'), '', 'tools', 'plugincontratosmenu');
+    Html::header(__('Contrato', 'contratos'), '', 'plugins', 'plugincontratosmenu', 'contracts');
     $contract->display(['id' => (int)$_GET['id']]);
     Html::footer();
 } else {
-    Html::header(__('Novo contrato', 'contratos'), '', 'tools', 'plugincontratosmenu');
+    Html::header(__('Novo contrato', 'contratos'), '', 'plugins', 'plugincontratosmenu', 'contracts');
     $contract->display(['id' => -1]);
     Html::footer();
 }

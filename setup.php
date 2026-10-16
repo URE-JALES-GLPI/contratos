@@ -45,8 +45,10 @@ function plugin_init_contratos(): void
 
     if (Session::getLoginUserID()) {
         if (Session::haveRight('plugin_contratos', READ)) {
+            // 'plugins' = aba própria de primeiro nível (menu do plugin),
+            // em vez de subitem aninhado em Ferramentas ('tools').
             $PLUGIN_HOOKS['menu_toadd']['contratos'] = [
-                'tools' => 'PluginContratosMenu',
+                'plugins' => 'PluginContratosMenu',
             ];
         }
     }
